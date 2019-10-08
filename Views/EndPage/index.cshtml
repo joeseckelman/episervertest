@@ -1,0 +1,21 @@
+﻿@using EPiServer.Core
+@using EPiServer.Web.Mvc.Html
+
+@model MyAlloySite.Models.Pages.EndPage
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>TSC.Components</title>
+    <link href="/assets/libs/css/bootstrap.css?v=44" rel="stylesheet" type="text/css" />
+    <link href="/assets/css/site.css?v=3" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            @Html.PropertyFor(m => m.MainContentArea)
+        </div>
+    </div>
+</body>
+</html>
